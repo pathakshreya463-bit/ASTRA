@@ -1,0 +1,354 @@
+body{
+    background-color: #fffdf6;
+}
+
+header{
+    display: flex;
+    
+    background-color: #fffdf6;
+    border-bottom: 1px solid #c5c5c5;
+    padding-top: 15px;
+    width: 100%;
+    height: 60px;
+    min-height: fit-content;
+    box-sizing: border-box;
+}
+.logo{
+    margin-left: 50px;
+    margin-right: 90px;
+    margin-top: -11px;
+    width: 115px;
+    height: 40px;
+    
+}
+.nav-link{
+    padding: 10px ;
+    margin-right: 30px;
+    margin-top: 50px;
+    font: 1em sans-serif;
+    font-display: block;
+    color: #757575;
+    font-size: 20px;
+    text-decoration: none;
+}
+.both-btns{
+    display: flex;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: -5px;
+    gap: 15px;
+    width: 200px;
+    height: 30px;
+}
+.signin-button{
+    width: 75px;
+    height:30px ;
+    border-radius: 25px;
+    font-size: 13px;
+    border: 2px solid #9664cb ;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+.login-button{
+    height: 30px;
+    width: 75px;
+    border-radius: 25px;
+    font-size: 13px;
+    color: white;
+    border: 2px solid black;
+    background-color: #9664cb;
+    transition: all 0.4s ease-in-out ;
+}
+.signin-button:hover,
+.login-button:hover{
+    box-shadow: 
+    0 0 5px #ffffff,   
+    0 0 10px #c16feb ;
+   transform: scale(0.95);
+
+}
+.hero{                                    /*heroooooo*/
+    text-align: center;
+    margin-top: 100px;
+}
+@font-face {
+  font-family: 'AgrandirWide';
+  src: url('fonts/agrandir-wide.ttf') format('truetype');   /* to apply the font and call itfrom the file saved in green */
+  font-weight: normal;
+  font-style: normal;
+}
+.hero h1{
+    font-size: 80px;
+    font-family: 'AgrandirWide';
+    font-weight: 1000;
+    word-spacing: 2px;
+    letter-spacing: 1.25px;
+}
+.hero p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #9d9d9d;
+    margin-top: -15px;
+}
+.before{
+    color: #bc5eff;
+    background: linear-gradient( 180deg,#ffd8c6,#bc5eff,#1e0638);
+    -webkit-background-clip: text;           /* -webtkit is used so that something thats not avaliable in css or not experimented is still visibble on google and apple browser*/
+    -webkit-text-fill-color: transparent;  /*and moz is for the same purpose just for firefox browser*/
+}
+.belive{
+    color: #bc5eff;
+    background: linear-gradient( 180deg,#ffd8c6,#bc5eff,#1e0638);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.two-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+.verify-btn{
+    width: 180px;
+    height: 50px;
+    border: 2px solid;
+    background: linear-gradient( 180deg,#ffd8c6,#bc5eff,#1e0638);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 22px;
+    border-radius: 8px;
+    border-color: #8356b3;
+    transition: all 0.5s ease-in-out;
+
+}
+.working-btn{
+    width: 180px;
+    height: 50px;
+    color: black;
+    background: linear-gradient(180deg,#ffd8c6,#bc5eff,#a884ce);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 22px;
+    border-radius: 8px;
+    border: 2px solid #8356b3;
+    transition: all 0.5s ease-in-out;
+}
+/*hover effects on both the buttons together*/
+.verify-btn:hover,
+.working-btn:hover{
+    box-shadow: 
+     0 0 18px #ffffff,   
+    0 0 24px #c16feb ;
+  transform: scale(1.02);
+}
+.sub{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   gap: 100px;
+   margin-top: 30px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.accuracy h2,
+.article h2,
+.data h2,
+.lang h2{
+    font-size: 40px;
+    background: linear-gradient(180deg,#ffd8c6,#bc5eff,#1e0638);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.accuracy p,
+.article p,
+.data p,
+.lang p{
+    margin-top: -20px;
+    color: #757575;
+    letter-spacing: 0.5px;
+}
+.strip{
+    margin-top: 100px;
+    height: 1px;
+    font-size: 13px;
+    width: 100%;
+    min-height: 20px ;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 1px solid #c5c5c5;
+    border-bottom:1px solid #c5c5c5;
+    text-align: center;
+    padding: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #9664cb;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px #9664cb;
+    word-spacing: 8px;
+}
+.move{
+    display: inline-block;
+    padding-bottom: 100%;
+    animation: scrollText 35s linear infinite;
+}
+@keyframes scrollText{
+     from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+
+}
+.start{
+    text-align: center;
+    font-size: 13px;
+    color: #8356b3;
+    margin-top: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.detector{
+    text-align: center;
+    justify-content: center;
+    margin-top: 125px;
+}
+.detector h2{
+    font-size: 80px;
+    font-family: 'AgrandirWide';
+
+}
+.detector p{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #757575;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.three{
+    color: #bc5eff;
+
+}
+.textarea{
+     display: flex;
+    text-align: start;
+    justify-content: center;
+}
+.textbox{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 70px;
+    border: 2px solid  #8356b3;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 45rem;
+    border-radius: 15px;
+    min-height: 55px;
+    max-height: 165px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    scrollbar-color: #bc5eff;
+}
+.textarea{
+    gap: 20px;
+    margin-top: 60px;
+    align-content: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.amount{
+    width: 150px;
+    font-size: 15px;
+    color: #757575;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+    padding-top: 6px;
+    padding-left: 9px;
+
+}
+.risk{
+    width: 150px;
+    height: 60px;
+    font-size: 15px;
+    color: #757575;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+    padding-top: 6px;
+    padding-left: 9px;
+}
+.for{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 25px;
+    background-color: white;
+}
+.optzz{
+   display: flex;
+  justify-content: center; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  border-style:double;
+  color: #ffffff;
+  background: linear-gradient( 180deg,#ffd8c6,#bc5eff,#57436c);
+  color: #bc5eff;
+    background: linear-gradient( 180deg,#ffd8c6,#bc5eff,#1e0638);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+  
+}
+.optzz:hover{
+     box-shadow: 
+    0 0 5px #d1cece,   
+    0 0 10px #c16feb ;
+   transform: scale(0.95);
+   
+}
+.optz{
+    font-family: 'AgrandirWide';
+    font-size: 28px;
+    margin: 75px auto;
+    text-align: center;
+
+}
+#portfolio {
+  text-align: center;
+  margin: 50px auto;
+  
+}
+
+.portfolio-box {
+  width: 865%;
+  justify-content: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+  margin-bottom: 15px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ba92c4;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 100px rgba(174, 25, 25, 0.1);
+}
+.portfolio-box ul {
+  list-style: none;       /* remove default bullets */
+  padding: 0;
+  
+}
+.portfolio-box li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  gap: 20px;             
+}
+
+.portfolio-box li:last-child {
+  border-bottom: none;    /* remove line after last item */
+}
